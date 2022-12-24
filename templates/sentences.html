@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generic test title</title>
+</head>
+
+<body>
+    <h3>This is tool for both teachers and language learners</h3>
+    <p>As a teacher myself, I've realized that giving a definition is not enough.  We need to see numerous examples of language <em>in use</em> before we feel comfortable using it ourselves.</p>
+    <p>This tool will show you 4 examples with the word(s) you enter in the field below</p>
+    <br>
+    <form action="{{url_for('get_data')}}" method="post">
+        <label>Show me some examples using:</label>
+        <input type="text" placeholder="text" name="target">
+        <button type="submit">Enter</button>
+    </form>
+
+</body>
+
+</html>
